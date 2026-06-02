@@ -1,0 +1,249 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f1f5f9;
+}
+
+/* HEADER */
+.header {
+    background: #1e293b;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-box img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.logo-box span {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #38bdf8;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* HERO */
+.hero {
+    height: 70vh;
+    background: linear-gradient(to right, #38bdf8, #0ea5e9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+.hero p {
+    margin: 10px 0 25px;
+    font-size: 18px;
+}
+
+.btn {
+    background: white;
+    color: #0ea5e9;
+    padding: 12px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e0f2fe;
+}
+
+/* SERVICES */
+.services-vertical {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.service-card {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.02);
+}
+
+.service-card img {
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.service-text {
+    padding: 30px;
+}
+
+.service-text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.service-text p {
+    font-size: 16px;
+    color: #555;
+}
+
+.book-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: #0ea5e9;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.book-btn:hover {
+    background: #0284c7;
+}
+
+/* BOOKING FORM */
+.booking {
+    max-width: 450px;
+    margin: 60px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.booking h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.booking form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking input,
+.booking select,
+.booking textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.booking input:focus,
+.booking select:focus,
+.booking textarea:focus {
+    border-color: #0ea5e9;
+    box-shadow: 0 0 5px rgba(14,165,233,0.5);
+}
+
+.booking textarea {
+    resize: none;
+    height: 80px;
+}
+
+.booking button {
+    background: #0ea5e9;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.booking button:hover {
+    background: #0284c7;
+}
+
+/* CONTACT */
+.contact {
+    padding: 60px;
+    text-align: center;
+}
+
+.contact p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* FOOTER */
+footer {
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 10px;
+    }
+
+    .service-card {
+        flex-direction: column;
+    }
+
+    .service-card img {
+        width: 100%;
+    }
+
+    .booking {
+        width: 90%;
+    }
+}

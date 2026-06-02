@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Service</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+<header class="header">
+    <div class="logo-box">
+        <img src="images/logo.png" alt="logo">
+        <span>MANI HOME SERVICES</span>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Book Service</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="booking">
+
+    <h2>Book a Service</h2>
+
+    <form action="BookingServlet" method="post">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+
+        <select name="service" required>
+            <option value="">Select Service</option>
+            <option value="AC Service">AC Service</option>
+            <option value="Electrician">Electrician</option>
+            <option value="Plumber">Plumber</option>
+            <option value="Cleaning">Cleaning</option>
+        </select>
+
+        <textarea name="address" placeholder="Address"></textarea>
+
+        <button type="submit">Submit Request</button>
+
+    </form>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    &copy; 2026 Mani Home Services
+</footer>
+
+</body>
+</html>
